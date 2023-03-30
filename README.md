@@ -2,6 +2,8 @@
 安装tensorRT_,ONNX1.8,导出engine,
 ----------------------------------------------------------------
 记录正常导出tensorRT的engine,安装对应版本的CUDA,tensorRT,ONNX,正常导出
+--------------------------------------------------------------------
+使用trt进行fp32、fp16量化，
 ----------------------------------------------------------------------
 D:\anaconda\setup\envs\torch7\python.exe D:/PycharmProjects/yolov5-7.0/export.py 
 export: data=D:\PycharmProjects\yolov5-7.0\data\coco128.yaml, weights=D:\PycharmProjects\yolov5-7.0\yolov5s.pt, imgsz=[640, 640], batch_size=1, device=0, half=False, inplace=False, keras=False, optimize=False, int8=False, dynamic=False, simplify=False, opset=12, verbose=False, workspace=4, nms=False, agnostic_nms=False, topk_per_class=100, topk_all=100, iou_thres=0.45, conf_thres=0.25, include=['engine']
